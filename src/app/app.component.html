@@ -1,1 +1,25 @@
 <app-heroes></app-heroes>
+<!--The content below is only a placeholder and can be replaced.-->
+<div style = "text-align:center">
+  <h1>
+     Welcome to {{title}}.
+  </h1>
+</div>
+<div> Months :
+  <select (change) = "changemonths($event)" >
+     <option *ngFor = "let i of months">{{i}}</option>
+  </select>
+</div>
+<br/>
+<div>
+  <span *ngIf = "isavailable; then condition1 else condition2"></span>
+  <ng-template #condition1>Condition is valid</ng-template>
+  <ng-template #condition2>Condition is invalid</ng-template>
+</div>
+<button (click)="myClickFunction($event)">
+  Click Me
+</button>
+
+<div style = "text-align:center">
+    <span appChangeText >Welcome to {{title}}.</span>
+ </div>

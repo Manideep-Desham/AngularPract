@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-app';
+  title = 'this value is coming from app.component.ts';
+  months = ["January", "Feburary", "March", "April",
+            "May", "June", "July", "August", "September",
+            "October", "November", "December"];
+   isavailable = false;
+  myClickFunction(event) { 
+   alert("Button is clicked");
+ }
+ changemonths($event){
+   alert("Month selected has been changed") ;
+ }
 }
